@@ -72,10 +72,10 @@ $(document).ready(function () {
         })
     })
     
-    var opacity = 0.1;
     //change pixel color to grey-scale, and after 10 passes the pixel turns black
     $('#greyButton').on('click', function() {
         clearGrid();
+        var opacity = 0.1;
         $('div').on('mouseenter', '.column', function(event) {
             event.stopPropagation();
             var currentColor = 'rgba(0, 0, 0, ' + opacity + ')';
@@ -86,6 +86,7 @@ $(document).ready(function () {
             else opacity = 0.1;
         })
     })
+    console.log(opacity);
 })
 
 
