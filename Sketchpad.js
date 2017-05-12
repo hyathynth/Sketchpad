@@ -68,7 +68,6 @@ $(document).ready(function () {
         $('div').on('mouseenter', '.column', function(event) {
             event.stopPropagation();
             var randomColor = 'rgb(' + Math.round(Math.random()*255) + ',' + Math.round(Math.random()*255) + ',' + Math.round(Math.random()*255) + ')';
-            console.log(randomColor);
             $(this).css('background-color', randomColor);
         })
     })
@@ -80,7 +79,6 @@ $(document).ready(function () {
         $('div').on('mouseenter', '.column', function(event) {
             event.stopPropagation();
             var currentColor = 'rgba(0, 0, 0, ' + opacity + ')';
-            console.log(currentColor);
             $(this).css('background-color', currentColor);
             if (opacity < 1) {
                 opacity = parseFloat((opacity + 0.1).toFixed(1));
