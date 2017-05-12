@@ -33,3 +33,13 @@ button {
     margin-left: 10px;
 
 }
+
+button:hover {
+    background-color: #E0E0E0;
+}
+
+button:focus {
+    background-color: #adadad;
+    outline:0;
+}
+
