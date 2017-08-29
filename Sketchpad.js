@@ -86,7 +86,7 @@ $(document).ready(function () {
             else opacity = 0.1;
         })
     })
-    console.log(opacity);
+   
 })
 
 
